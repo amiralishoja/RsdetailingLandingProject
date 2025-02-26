@@ -1,0 +1,21 @@
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+    Fonts 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+@font-face {
+    font-family: "Kalameh";
+    src: url("../Fonts/Kalameh/Kalameh.ttf") format(truetype);
+    src: url("../Fonts/Kalameh/Kalameh.otf") format(opentype);
+    src: url("../Fonts/Kalameh/Kalameh.woff") format(woff);
+    src: url("../Fonts/Kalameh/Kalameh.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Request";
+    src: url("../Fonts/Request/Request") format(truetype);
+    src: url("../Fonts/Request/Request.otf") format(opentype);
+    src: url("../Fonts/Request/Request.woff") format(woff);
+    src: url("../Fonts/Request/Request.woff2") format(woff2);
+}

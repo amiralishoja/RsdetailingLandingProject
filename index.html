@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="Styles/App.css">
+    <link rel="stylesheet" href="Styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Styles/Responsive.css">
+    <title>Rsdetailing Project</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="menu-btn btn btn--menu">
+                    <div class="menu-btn__icon"></div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item menu__item--active" data-section="home">
+                        <svg class="menu__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item" data-section="services">
+                        <svg class="menu__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122" />
+                        </svg>
+                        <a href="#" class="menu__link">Services</a>
+                    </li>
+                    <li class="menu__item" data-section="panels">
+                        <svg class="menu__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                        </svg>
+                        <a href="#" class="menu__link">Panels</a>
+                    </li>
+                    <li class="menu__item" data-section="poll">
+                        <svg class="menu__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>                          
+                        <a href="#" class="menu__link">Poll Star</a>
+                    </li>
+                </ul>
+                <img src="Images/Logo-header.png" alt="Logo" class="logo">
+                <div class="nav__btn">
+                    <div class="account btn">
+                        <svg class="account__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <p class="account__text">Account</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="home flex-center">
+            <div class="container">
+                <div class="glasbox--home glasbox--odd flex-center">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-center">
+                            <div class="home-content">
+                                <h1 class="home-content__title">Time To Make Your Software</h1>
+                                <p class="home-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis eos praesentium at. Molestiae, aut! Ut illum tenetur vitae perferendis!</p>
+                                <div class="home-content__btn-wrapper">
+                                    <div class="home-content__btn btn btn--green">Cover now</div>
+                                    <div class="home-content__btn btn btn--blue">Discover !!!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 flex-center">
+                            <div class="home-photo flex-center">
+                                <img src="Images/Home.png" alt="Home" class="photo__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="services flex-center">
+            <div class="container">
+                <div class="glasbox--services glasbox--pair flex-center">
+                    <div class="row h-full">
+                        <div class="col-12 col-lg-6 flex-center">
+                            <div class="services__options flex-center">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options__box options__box--green">
+                                                <div class="options__content">
+                                                    <svg class="options__img" viewBox="0 -3.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <title>battery_half_fill [#1472]</title>
+                                                        <desc>Created with Sketch.</desc>
+                                                        <defs>
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -403.000000)" fill="rgba(255,255,255,1)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M339.8,255 L333.2753,255 L331.77485,245 L339.8,245 L339.8,255 Z M341.9,247 L341.9,243 L323,243 L323,257 L341.9,257 L341.9,253 L344,253 L344,247 L341.9,247 Z" id="battery_half_fill-[#1472]"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                    <h2 class="options__title">Charge Display</h2>
+                                                    <p class="options__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel ad omnis perferendis ipsam. Quas eveniet dolores assumenda eaque et debitis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options__box options__box--red">
+                                                <div class="options__content">
+                                                    <svg class="options__img" viewBox="0 0 15 15" style="fill:rgba(255,255,255,1)" version="1.1" id="fuel" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13,6L13,6v5.5c0,0.2761-0.2239,0.5-0.5,0.5S12,11.7761,12,11.5v-2C12,8.6716,11.3284,8,10.5,8H9V2c0-0.5523-0.4477-1-1-1H2&#xA;&#x9;C1.4477,1,1,1.4477,1,2v11c0,0.5523,0.4477,1,1,1h6c0.5523,0,1-0.4477,1-1V9h1.5C10.7761,9,11,9.2239,11,9.5v2&#xA;&#x9;c0,0.8284,0.6716,1.5,1.5,1.5s1.5-0.6716,1.5-1.5V5c0-0.5523-0.4477-1-1-1l0,0V2.49C12.9946,2.2178,12.7723,1.9999,12.5,2&#xA;&#x9;c-0.2816,0.0047-0.5062,0.2367-0.5015,0.5184C11.9987,2.5289,11.9992,2.5395,12,2.55V5C12,5.5523,12.4477,6,13,6s1-0.4477,1-1&#xA;&#x9;s-0.4477-1-1-1 M8,6.5C8,6.7761,7.7761,7,7.5,7h-5C2.2239,7,2,6.7761,2,6.5v-3C2,3.2239,2.2239,3,2.5,3h5C7.7761,3,8,3.2239,8,3.5&#xA;&#x9;V6.5z"/>
+                                                    </svg>
+                                                    <h2 class="options__title">Fuel Show</h2>
+                                                    <p class="options__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel ad omnis perferendis ipsam. Quas eveniet dolores assumenda eaque et debitis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options__box options__box--yellow">
+                                                <div class="options__content">
+                                                    <svg class="options__img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"/>
+                                                            <path fill="rgba(255,255,255,1)" d="M8 5h11a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V11l4-6zm5-4h5a1 1 0 0 1 1 1v2h-7V2a1 1 0 0 1 1-1zM6 12v7h2v-7H6z"/>
+                                                        </g>
+                                                    </svg>
+                                                    <h2 class="options__title">Oil Display</h2>
+                                                    <p class="options__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel ad omnis perferendis ipsam. Quas eveniet dolores assumenda eaque et debitis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 flex-center">
+                            <div class="services__display">
+                                <div class="display">
+                                    <div class="display__header">
+                                        <div class="display__header-left">
+                                            <img src="Images/Icon/Charge.png" alt="" class="display__header-img">
+                                        </div>
+                                        <div class="display__header-right">
+                                            <img src="Images/Icon/Unlock.png" alt="" class="display__header-img">
+                                            <img src="Images/Icon/Warning.png" alt="" class="display__header-img">
+                                        </div>
+                                    </div>
+                                    <div class="display__main">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="display__main-nav flex-center">
+                                                    <img src="Images/Logo-header.png" alt="logo" class="display__main-logo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row h-full pad10">
+                                            <div class="col-5 pad10">
+                                                <div class="display__main-oil flex-center">
+                                                    <svg class="display__main-oil-img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"/>
+                                                            <path fill="rgba(255,255,255,1)" d="M8 5h11a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V11l4-6zm5-4h5a1 1 0 0 1 1 1v2h-7V2a1 1 0 0 1 1-1zM6 12v7h2v-7H6z"/>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 pad10">
+                                                <div class="display__main-charge flex-center">
+                                                    <svg class="display__main-charge-img" viewBox="0 -3.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <title>battery_half_fill [#1472]</title>
+                                                        <desc>Created with Sketch.</desc>
+                                                        <defs>
+                                                    </defs>
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -403.000000)" fill="rgba(255,255,255,1)">
+                                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                    <path d="M339.8,255 L333.2753,255 L331.77485,245 L339.8,245 L339.8,255 Z M341.9,247 L341.9,243 L323,243 L323,257 L341.9,257 L341.9,253 L344,253 L344,247 L341.9,247 Z" id="battery_half_fill-[#1472]"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="display__main-fuel flex-center">
+                                                    <svg class="display__main-fuel-img" class="options__img" viewBox="0 0 15 15" style="fill:rgba(255,255,255,1)" version="1.1" id="fuel" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13,6L13,6v5.5c0,0.2761-0.2239,0.5-0.5,0.5S12,11.7761,12,11.5v-2C12,8.6716,11.3284,8,10.5,8H9V2c0-0.5523-0.4477-1-1-1H2&#xA;&#x9;C1.4477,1,1,1.4477,1,2v11c0,0.5523,0.4477,1,1,1h6c0.5523,0,1-0.4477,1-1V9h1.5C10.7761,9,11,9.2239,11,9.5v2&#xA;&#x9;c0,0.8284,0.6716,1.5,1.5,1.5s1.5-0.6716,1.5-1.5V5c0-0.5523-0.4477-1-1-1l0,0V2.49C12.9946,2.2178,12.7723,1.9999,12.5,2&#xA;&#x9;c-0.2816,0.0047-0.5062,0.2367-0.5015,0.5184C11.9987,2.5289,11.9992,2.5395,12,2.55V5C12,5.5523,12.4477,6,13,6s1-0.4477,1-1&#xA;&#x9;s-0.4477-1-1-1 M8,6.5C8,6.7761,7.7761,7,7.5,7h-5C2.2239,7,2,6.7761,2,6.5v-3C2,3.2239,2.2239,3,2.5,3h5C7.7761,3,8,3.2239,8,3.5&#xA;&#x9;V6.5z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="display__footer">
+                                        <div class="display__footer-child flex-center">
+                                            <div class="display__footer-child-flash"></div>
+                                        </div>
+                                        <div class="display__footer-child flex-center">
+                                            <div class="display__footer-child-circle"></div>
+                                        </div>
+                                        <div class="display__footer-child flex-center">
+                                            <div class="display__footer-child-moraba"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="panels flex-center">
+            <div class="container">
+                <div class="glasbox--panels glasbox--odd flex-center">
+                    <div class="row mgn-10">
+                        <div class="col-12 col-lg-3 flex-center pad10">
+                            <div class="panels__object">
+                                <div class="object__item object__item--active" data-content-id="#free">
+                                    <div class="object__content object__content--free">
+                                        <h5 class="object__title">Free</h5>
+                                        <svg class="object__img" fill="rgba(255,255,255,1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.3,11.214A6.791,6.791,0,0,0,10.792,22h2.416A6.791,6.791,0,0,0,18.7,11.214L12,2Zm5.946,8.036a5.24,5.24,0,0,1-4.631-2.779,1,1,0,1,1,1.766-.942,3.239,3.239,0,0,0,2.865,1.721,1,1,0,0,1,0,2Z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="object__item" data-content-id="#personal">
+                                    <div class="object__content object__content--personal">
+                                        <h5 class="object__title">Personal</h5>
+                                        <svg class="object__img" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"  xml:space="preserve">
+                                            <g>
+                                                <path fill="rgba(255,255,255,1)" class="st0" d="M450.498,155.424h-22.156v137.153h22.156c15.036,0,27.214-12.185,27.214-27.213v-82.719
+                                                    C477.711,167.61,465.533,155.424,450.498,155.424z"/>
+                                                <path fill="rgba(255,255,255,1)" class="st0" d="M438.841,0h-29.7H73.158c-21.47,0-38.87,17.407-38.87,38.87v434.253c0,21.471,17.399,38.877,38.87,38.877
+                                                    h297.106c21.471,0,38.877-17.406,38.877-38.877V137.146h41.356c15.036,0,27.214-12.179,27.214-27.207V38.87
+                                                    C477.711,17.407,460.305,0,438.841,0z M161.891,207.088c0-35.871,29.071-64.948,64.948-64.948
+                                                    c35.863,0,64.934,29.078,64.934,64.948v15.556c0,35.863-29.071,64.934-64.934,64.934c-35.877,0-64.948-29.071-64.948-64.934
+                                                    V207.088z M306.245,389.825c-21.007,0-79.405,0-79.405,0s-58.412,0-79.419,0c-21.006,0-30.528-30.549-18.378-52.134
+                                                    c9.15-16.278,24.142-34.714,48.563-45.199c13.964,9.764,30.928,15.514,49.234,15.514c18.285,0,35.256-5.75,49.22-15.514
+                                                    c24.414,10.485,39.414,28.92,48.57,45.199C336.773,359.276,327.251,389.825,306.245,389.825z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="object__item" data-content-id="#company">
+                                    <div class="object__content object__content--company">
+                                        <h5 class="object__title">Company</h5>
+                                        <svg class="object__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(255,255,255,1)" d="M60,16H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v12H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V20C64,17.789,62.211,16,60,16z M24,8h16v8H24V8z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="object__item" data-content-id="#pro">
+                                    <div class="object__content object__content--pro">
+                                        <h5 class="object__title">Pro</h5>
+                                        <svg class="object__img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"/>
+                                                <path fill="rgba(255,255,255,1)" d="M4.873 3h14.254a1 1 0 0 1 .809.412l3.823 5.256a.5.5 0 0 1-.037.633L12.367 21.602a.5.5 0 0 1-.706.028c-.007-.006-3.8-4.115-11.383-12.329a.5.5 0 0 1-.037-.633l3.823-5.256A1 1 0 0 1 4.873 3zm.51 2l-2.8 3.85L12 19.05 21.417 8.85 18.617 5H5.383z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="object__item" data-content-id="#vip">
+                                    <div class="object__content object__content--vip">
+                                        <h5 class="object__title">Vip</h5>
+                                        <svg class="object__img"viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path stroke="rgba(255,255,255,1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27 7H5a2 2 0 00-2 2v14a2 2 0 002 2h22a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+                                            <path stroke="rgba(255,255,255,1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 13l3 6.5 3-6.5M16.5 13v6.5M20.5 17.275h1.48c.651 0 1.277-.275 1.721-.75a2.338 2.338 0 00.215-2.932 1.394 1.394 0 00-1.14-.593H20.5v4.275zm0 0V19.5"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9 flex-center pad10">
+                            <div class="panels__item panels__item--free panels__item--show" id="free">
+                                <div class="panels__item-header">
+                                    <svg class="panels__item-img" fill="rgba(255,255,255,1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.3,11.214A6.791,6.791,0,0,0,10.792,22h2.416A6.791,6.791,0,0,0,18.7,11.214L12,2Zm5.946,8.036a5.24,5.24,0,0,1-4.631-2.779,1,1,0,1,1,1.766-.942,3.239,3.239,0,0,0,2.865,1.721,1,1,0,0,1,0,2Z"/></svg>
+                                    <h3 class="panels__item-title">Free</h3>
+                                </div>
+                                <div class="panels__item-caption">
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Vpn</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Internet</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Security</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Spa</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Webflow</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>                                              
+                                        </div>
+                                    </div>
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Flutter</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Node js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">React</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Next js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels__item-by">
+                                    <svg class="panels__item-by-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h4 class="panels__item-by-text">By</h4>
+                                </div>
+                            </div>
+                            <div class="panels__item panels__item--personal" id="personal">
+                                <div class="panels__item-header">
+                                    <svg class="panels__item-img" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"  xml:space="preserve">
+                                        <g>
+                                            <path fill="rgba(255,255,255,1)" class="st0" d="M450.498,155.424h-22.156v137.153h22.156c15.036,0,27.214-12.185,27.214-27.213v-82.719
+                                                C477.711,167.61,465.533,155.424,450.498,155.424z"/>
+                                            <path fill="rgba(255,255,255,1)" class="st0" d="M438.841,0h-29.7H73.158c-21.47,0-38.87,17.407-38.87,38.87v434.253c0,21.471,17.399,38.877,38.87,38.877
+                                                h297.106c21.471,0,38.877-17.406,38.877-38.877V137.146h41.356c15.036,0,27.214-12.179,27.214-27.207V38.87
+                                                C477.711,17.407,460.305,0,438.841,0z M161.891,207.088c0-35.871,29.071-64.948,64.948-64.948
+                                                c35.863,0,64.934,29.078,64.934,64.948v15.556c0,35.863-29.071,64.934-64.934,64.934c-35.877,0-64.948-29.071-64.948-64.934
+                                                V207.088z M306.245,389.825c-21.007,0-79.405,0-79.405,0s-58.412,0-79.419,0c-21.006,0-30.528-30.549-18.378-52.134
+                                                c9.15-16.278,24.142-34.714,48.563-45.199c13.964,9.764,30.928,15.514,49.234,15.514c18.285,0,35.256-5.75,49.22-15.514
+                                                c24.414,10.485,39.414,28.92,48.57,45.199C336.773,359.276,327.251,389.825,306.245,389.825z"/>
+                                        </g>
+                                    </svg>
+                                    <h3 class="panels__item-title">Personal</h3>
+                                </div>
+                                <div class="panels__item-caption">
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Vpn</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Internet</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Security</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Spa</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Webflow</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Flutter</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Node js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">React</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Next js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels__item-by">
+                                    <svg class="panels__item-by-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h4 class="panels__item-by-text">By</h4>
+                                </div>
+                            </div>
+                            <div class="panels__item panels__item--company" id="company">
+                                <div class="panels__item-header">
+                                    <svg class="panels__item-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(255,255,255,1)" d="M60,16H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v12H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V20C64,17.789,62.211,16,60,16z M24,8h16v8H24V8z"/>
+                                    </svg>
+                                    <h3 class="panels__item-title">Company</h3>
+                                </div>
+                                <div class="panels__item-caption">
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Vpn</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Internet</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Security</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Spa</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Webflow</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Flutter</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Node js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">React</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Next js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels__item-by">
+                                    <svg class="panels__item-by-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h4 class="panels__item-by-text">By</h4>
+                                </div>
+                            </div>
+                            <div class="panels__item panels__item--pro" id="pro">
+                                <div class="panels__item-header">
+                                    <svg class="panels__item-img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path fill="none" d="M0 0h24v24H0z"/>
+                                            <path fill="rgba(255,255,255,1)" d="M4.873 3h14.254a1 1 0 0 1 .809.412l3.823 5.256a.5.5 0 0 1-.037.633L12.367 21.602a.5.5 0 0 1-.706.028c-.007-.006-3.8-4.115-11.383-12.329a.5.5 0 0 1-.037-.633l3.823-5.256A1 1 0 0 1 4.873 3zm.51 2l-2.8 3.85L12 19.05 21.417 8.85 18.617 5H5.383z"/>
+                                        </g>
+                                    </svg>
+                                    <h3 class="panels__item-title">Pro</h3>
+                                </div>
+                                <div class="panels__item-caption">
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Vpn</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Internet</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Security</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Spa</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Webflow</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Flutter</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Node js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">React</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Next js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels__item-by">
+                                    <svg class="panels__item-by-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h4 class="panels__item-by-text">By</h4>
+                                </div>
+                            </div>
+                            <div class="panels__item panels__item--vip" id="vip">
+                                <div class="panels__item-header">
+                                    <svg class="panels__item-img" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                        <path stroke="rgba(255,255,255,1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27 7H5a2 2 0 00-2 2v14a2 2 0 002 2h22a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+                                        <path stroke="rgba(255,255,255,1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 13l3 6.5 3-6.5M16.5 13v6.5M20.5 17.275h1.48c.651 0 1.277-.275 1.721-.75a2.338 2.338 0 00.215-2.932 1.394 1.394 0 00-1.14-.593H20.5v4.275zm0 0V19.5"/>
+                                    </svg>
+                                    <h3 class="panels__item-title">Vip</h3>
+                                </div>
+                                <div class="panels__item-caption">
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Vpn</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Internet</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Security</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Spa</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Webflow</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                    <div class="caption__table">
+                                        <div class="table__item">
+                                            <h6 class="table__title">Flutter</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Node js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">React</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Next js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                        <div class="table__item">
+                                            <h6 class="table__title">Js</h6>
+                                            <svg class="table__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                            </svg>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels__item-by">
+                                    <svg class="panels__item-by-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h4 class="panels__item-by-text">By</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="poll flex-center">
+            <div class="container">
+                <div class="glasbox--poll glasbox--pair flex-center">
+                    <div class="pollstar flex-center">
+                        <div class="pollstar__content pollstar__content--show">
+                            <svg class="pollstar__img" viewBox="0 0 524.67004 520.18759" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M524.67004,518.99758c0,.66003-.53003,1.19-1.19006,1.19H1.19c-.65997,0-1.19-.52997-1.19-1.19s.53003-1.19,1.19-1.19H523.47998c.66003,0,1.19006,.53003,1.19006,1.19Z" fill="#3f3d56"/><polygon points="362.54192 461.05879 368.54192 486.05879 350.54192 491.05879 346.54192 464.05879 362.54192 461.05879" fill="#ffb6b6"/><polygon points="391.54192 380.05879 372.54192 396.05879 360.54192 415.05879 377.54192 426.05879 406.54192 393.05879 391.54192 380.05879" fill="#ffb6b6"/><path d="M385.54192,215.05879l16,54s71,62,64,75c-7,13-54,49-54,49,0,0,3.48819,11.51181-6.75591,6.75591-10.24409-4.75591-21.24409-17.75591-21.24409-17.75591,0,0,0-10,5-8,5,2,28-25,28-25l-50-46v153.81496s12,10.49213,0,11.33858c-12,.84646-23,2.84646-23,2.84646,0,0-14-5-9-10l-15-82-11-100,8-52,69-12Z" fill="#2f2e41"/><path d="M353.54192,483.05879s1-4,5-4h12.21654s3.78346,17,2.78346,17,16,22-2,23c-18,1-23-1-23-1l-2-7.8937s-3-5.1063-2-9.1063,9-18,9-18Z" fill="#2f2e41"/><path d="M378.54192,418.05879s11.48556-.1811,8.74278,2.90945c-2.74278,3.09055-7.74278,8.09055-7.74278,8.09055,0,0-11.8942,24-17.4471,19.5-5.5529-4.5-14.5529-54.5-11.5529-60.5s7-6,7-6l18.44907,11.09552s-11.44907,27.90448,2.55093,24.90448Z" fill="#2f2e41"/><polygon points="350.54192 130.05879 354.54192 105.05879 327.54192 94.05879 323.54192 132.05879 350.54192 130.05879" fill="#ffb6b6"/><polygon points="350.54192 130.05879 354.54192 105.05879 327.54192 94.05879 323.54192 132.05879 350.54192 130.05879" opacity=".1"/><path d="M322.04192,126.55879l32-8,34,11s15,42,10,57c-5,15-5,44.29921-5,44.29921,0,0-.5-12.79921-29.5-3.79921-29,9-50,8-50,8l-1-36-12.56231-31.97679c-5.36947-13.66775,.41799-29.18571,13.42611-35.99949l8.6362-4.52372Z" fill="#e6e6e6"/><g><path id="uuid-1b03a630-7e31-41b5-b302-96493ff31189-171" d="M468.93625,244.36122c4.51538,5.40957,5.38427,12.12429,1.94111,14.99735-3.44316,2.87305-9.89353,.81637-14.40979-4.59574-1.83372-2.13717-3.12896-4.6824-3.77735-7.42276l-18.84239-23.1622,9.17843-7.42782,19.28065,22.56531c2.58106,1.12838,4.85427,2.85861,6.62935,5.04587Z" fill="#ffb6b6"/><polygon points="386.58903 129.87809 380.03103 155.85437 412.12807 207.23315 444.89428 240.16415 455.51447 231.35346 422.46915 190.23683 397.42099 137.25937 386.58903 129.87809" fill="#e6e6e6"/></g><g><ellipse cx="459.12853" cy="52.44806" rx="41.5" ry="52.5" transform="translate(-2.61679 33.98) rotate(-4.22648)" fill="#6c63ff"/><rect x="460.12853" y="104.80549" width="2" height="199.43799" fill="#2f2e41"/><polygon points="462.62626 100.59386 462.86623 107.66085 466.05994 114.20304 452.73559 113.52346 458.33644 107.88988 457.70336 101.46854 462.62626 100.59386" fill="#6c63ff"/></g><g><circle cx="343.71883" cy="85.56184" r="27.53355" fill="#ffb6b6"/><path d="M341.52141,48.54491c.79671,.46507,1.86389-.23857,2.11935-1.12501s-.04212-1.82761-.33722-2.70165l-1.48558-4.40008c-1.0536-3.12063-2.17183-6.35032-4.45368-8.72552-3.44408-3.58499-8.91753-4.497-13.84474-3.83628-6.3275,.84849-12.57056,4.27476-15.51267,9.94055-2.9421,5.66579-1.68954,13.5716,3.62665,17.10648-7.57673,8.68419-10.21786,18.36242-9.80083,29.87971,.41702,11.51729,12.96805,22.11696,21.153,30.23044,1.82785-1.10801,3.48957-6.30065,2.48442-8.18702s.435-4.07179-.80984-5.80934-2.28631,1.02915-1.0278-.69854c.79414-1.0902-2.30536-3.59827-1.12493-4.25078,5.70958-3.15606,7.60854-10.2728,11.19452-15.72263,4.32536-6.57351,11.72821-11.02516,19.56239-11.76369,4.31558-.40683,8.87377,.33002,12.41109,2.83544,3.53731,2.50542,5.82735,6.98256,5.00708,11.23896,2.12436-2.157,3.18182-5.31809,2.78297-8.31917-.39885-3.00108-2.24525-5.77623-4.85926-7.3035,1.58943-5.25615,.22781-11.30225-3.46132-15.36964s-18.65428-3.37463-24.04014-2.30417" fill="#2f2e41"/><path d="M340.68501,68.64111c-7.1334,.77005-12.28392,6.94917-16.63311,12.65557-2.50677,3.28904-5.13259,6.92124-5.06965,11.05618,.06363,4.18054,2.85874,7.76625,4.19457,11.72813,2.18345,6.47581,.05542,14.18053-5.14218,18.61771,5.13581,.97458,10.68776-2.87625,11.57437-8.02797,1.03212-5.99724-3.51408-11.7855-2.97566-17.84704,.47435-5.34029,4.68273-9.45028,8.26047-13.4432,3.57775-3.99292,6.93788-9.29143,5.29193-14.39384" fill="#2f2e41"/></g><path d="M314.42637,234.55793H108.75752c-23.32296,0-42.22995,18.90699-42.22995,42.22995v199.43289c0,23.32291,18.90695,42.22986,42.22986,42.22986h205.66894c23.32296,0,42.22995-18.90699,42.22995-42.22995v-199.43281c0-23.32296-18.90699-42.22995-42.22995-42.22995Z" fill="#fff"/><path d="M314.42649,519.45019H108.75754c-23.83691,0-43.22998-19.39258-43.22998-43.22949v-199.43262c0-23.83691,19.39307-43.22998,43.22998-43.22998h205.66895c23.83691,0,43.22998,19.39307,43.22998,43.22998v199.43262c0,23.83691-19.39307,43.22949-43.22998,43.22949ZM108.75754,235.5581c-22.73438,0-41.22998,18.49561-41.22998,41.22998v199.43262c0,22.73438,18.49561,41.22949,41.22998,41.22949h205.66895c22.73438,0,41.22998-18.49512,41.22998-41.22949v-199.43262c0-22.73437-18.49561-41.22998-41.22998-41.22998H108.75754Z" fill="#3f3d56"/><circle cx="292.72497" cy="249.4082" r="4.76903" fill="#3f3d56"/><circle cx="305.83981" cy="249.4082" r="4.76903" fill="#3f3d56"/><circle cx="318.95465" cy="249.4082" r="4.76903" fill="#3f3d56"/><path d="M102.01538,448.63094c-1.48165,0-2.68692,1.20526-2.68692,2.68692,0,.72246,.27901,1.39069,.78543,1.88399,.51079,.52304,1.1799,.80293,1.90148,.80293h215.09838c1.48165,0,2.68692-1.20526,2.68692-2.68692,0-.72246-.27901-1.39069-.78543-1.88399-.51079-.52304-1.1799-.80293-1.90148-.80293H102.01538Z" fill="#e6e6e6"/><path d="M217.02966,447.7353v7.16511H102.01538c-.98518,0-1.88082-.39414-2.52565-1.0569-.66287-.64483-1.0569-1.54047-1.0569-2.52565,0-1.97047,1.61219-3.58255,3.58255-3.58255h115.01428Z" fill="#6c63ff"/><path d="M312.63557,434.30072h-35.82554c-3.95078,0-7.16511-3.21345-7.16511-7.16511s3.21433-7.16511,7.16511-7.16511h35.82554c3.95078,0,7.16511,3.21345,7.16511,7.16511s-3.21433,7.16511-7.16511,7.16511Z" fill="#e6e6e6"/><g><polyline points="178.04436 439.42158 153.00042 355.27363 151.08342 355.84395 176.03948 439.696" fill="#2f2e41"/><ellipse cx="175.04192" cy="195.55879" rx="41.5" ry="52.5" transform="translate(-13.93649 13.43225) rotate(-4.22648)" fill="#6c63ff"/><rect x="176.04192" y="247.91621" width="2" height="199.43799" fill="#2f2e41"/><polygon points="154.12589 352.83568 156.37116 359.54081 161.29787 364.90062 148.33299 368.04891 152.09477 361.05206 149.65683 355.07788 154.12589 352.83568" fill="#6c63ff"/><polygon points="178.53965 243.70459 178.77961 250.77158 181.97332 257.31377 168.64898 256.63419 174.24983 251.0006 173.61675 244.57926 178.53965 243.70459" fill="#6c63ff"/><ellipse cx="136.04192" cy="305.55879" rx="41.5" ry="52.5" transform="translate(-100.19337 68.77521) rotate(-20.93384)" fill="#6c63ff"/></g><path id="uuid-b40723c2-846b-43d4-8d7a-d7be28bdc184-172" d="M336.50935,224.32158c6.7457,2.0366,11.16281,7.16803,9.866,11.46082-1.29681,4.29279-7.81569,6.12073-14.56352,4.0825-2.70665-.77722-5.18781-2.19132-7.2359-4.12401l-28.47282-8.99009,3.58382-11.25044,28.51078,8.25056c2.77637-.4763,5.62645-.28063,8.31164,.57066Z" fill="#ffb6b6"/><path d="M287.04192,150.55879l30-22-1,42-28,36,30,12-1,17.13379s-38-9.13379-44-10.13379-11-15-11-15l25-60Z" fill="#e6e6e6"/></svg>
+                            <form action="#" class="pollstar__form">
+                                <h2 class="form__text">Hello World</h2>
+                                <input type="text" class="form__input" placeholder="Name">
+                                <input type="text" class="form__input" placeholder="Family">
+                                <textarea class="form__input form__input--textarea" rows="3" placeholder="Enter Your Poll"></textarea>
+                                <div class="form__input form__submit flex-center" data-content-id="#thanks">Submit</div>
+                            </form>
+                        </div>
+                        <div class="pollstar__content pollstar__content--thanks" id="thanks" >
+                            <svg class="pollstar__img" viewBox="0 0 303.70675 525.41846" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m42.48676,524.22846c0,.65997.53,1.19,1.19,1.19h258.83998c.66,0,1.19-.53003,1.19-1.19s-.53-1.19-1.19-1.19H43.67676c-.66,0-1.19.53003-1.19,1.19Z" fill="#484565"/><path d="m178.60676.32846s-21.91-5.31-35.17,26.77c-11.05,26.74-18.89,41.02-9.92,50.72001,3.21001,3.47,7.78999,5.34,12.50999,5.5l50.5,1.66s18.54001-48.62,7.27-66.2C192.52676,1.18846,178.60676.32846,178.60676.32846Z" fill="#2f2e41"/><polygon points="189.06676 80.93847 164.77676 88.92846 164.77676 53.95847 186.81676 53.95847 189.06676 80.93847" fill="#f6a6a9"/><polygon points="170.42675 504.68848 147.66676 504.68848 134.47677 383.10846 169.64677 383.10846 170.42675 504.68848" fill="#f6a6a9"/><path d="m125.50676,524.22846c-2.39,0-4.52-.06-6.13-.21002-6.05-.54999-11.81-5.01001-14.71-7.62-1.3-1.16998-1.72-3.03998-1.04-4.64999h0c.49-1.16,1.46-2.01999,2.66-2.35999l15.97-4.56,25.86-17.45001.28999.51999c.11.19,2.64999,4.76999,3.5,7.85999.32001,1.17999.24001,2.16-.25,2.91-.34.53-.81.82999-1.2,1,.47.48999,1.94,1.48001,6.45,2.20001,6.60001,1.04999,7.98-5.79001,8.03999-6.07999l.03999-.23001.2-.13c3.14-2.01999,5.07001-2.94,5.74001-2.75.42.12,1.11.32999,2.98,18.95001.19.57999,1.5,4.87003.61,8.95999-.97,4.46002-20.44,2.91998-24.34,2.57001-.11.01001-14.69,1.04999-24.68,1.04999v.02002h.01001Z" fill="#2f2e41"/><polygon points="221.82676 504.68848 199.07676 504.68848 185.87678 383.10846 221.04678 383.10846 221.82676 504.68848" fill="#f6a6a9"/><path d="m176.91676,524.22846c-2.39,0-4.52-.06-6.13-.21002-6.05-.54999-11.81-5.01001-14.71001-7.62-1.3-1.16998-1.72-3.03998-1.03999-4.64999h0c.49001-1.16,1.46001-2.01999,2.66-2.35999l15.97-4.56,25.86-17.45001.28999.51999c.11.19,2.64999,4.76999,3.5,7.85999.32001,1.17999.24001,2.16-.25,2.91-.34.53-.81.82999-1.2,1,.47.48999,1.94,1.48001,6.45,2.20001,6.60001,1.04999,7.98-5.79001,8.03999-6.07999l.03999-.23001.2-.13c3.14-2.01999,5.07001-2.94,5.74001-2.75.42.12,1.11.32999,2.98,18.95001.19.57999,1.5,4.87003.61,8.95999-.97,4.46002-20.44,2.91998-24.34,2.57001-.11.01001-14.69,1.04999-24.68001,1.04999v.02002h.01003Z" fill="#2f2e41"/><polygon points="228.37678 206.06847 117.81676 206.06847 157.55675 75.27846 201.63676 75.27846 228.37678 206.06847" fill="#dddedf"/><path id="uuid-66b3dceb-eb78-472d-bf6e-ff966fbe189c-92" d="m114.80676,279.45847c-1.32,8.01001-6.66,13.76001-11.93,12.82999-5.27-.92999-8.48-8.17001-7.16-16.17999.48-3.20999,1.75-6.23999,3.7-8.85001l6.02-33.87,16.39,3.42999-7.68,33.01999c1.01,3.12,1.24,6.42001.67,9.62h0l-.00999.00003Z" fill="#f6a6a9"/><path d="m164.51678,75.29847s-27.46001-.72-30.35001,6.5c-2.89,7.23-36.85,179.21001-36.85,179.21001h22.4s44.8-185.71001,44.8-185.71001Z" fill="#dddedf"/><circle cx="170.34678" cy="38.00846" r="24.21" fill="#f6a6a9"/><path d="m174.14677,8.31846s-31.08,46.23-25.85001,75.07l-18.08-11.33s12.73-58.38,31.7-62.91l12.23-.84h0v.01s.00002,0,.00002,0Z" fill="#2f2e41"/><path d="m205.39677,206.06847h-72.55l-39.7,162.93001c-.73,6.88,3.63,13.29999,10.32,15.09,21.78,5.82999,74.04,14.10001,153.14999-8.92001,7.60999-2.20999,11.92999-10.23999,9.54001-17.79999l-60.75999-151.28999h0l-.00002-.00999.00002-.00002Z" fill="#2f2e41"/><path d="m107.54678,98.47847l-.5-.5-.5.5c-24.33-24.31-63.76-24.28-88.07.05-24.31,24.34-24.8,64.26001-.47,88.57001h0l89.1,89.01001,89.03999-89.12h0c24.31-24.34,23.8-64.26-.52-88.57-24.33-24.31-63.75999-24.28-88.07.05h0s-.00999.00998-.00999.00997Z" fill="#6c63ff"/><path d="m173.34678,87.51847l20.10001-10.31c9.19-3.4,19.44-2.26,27.66,3.09,25,16.26,74.27998,52.11002,53.10002,69.83002-27.91,23.36-65.64-18.07001-65.64-18.07001l-35.22-44.54h-.00003Z" fill="#dddedf"/><path id="uuid-3a4b3aa4-6bac-403c-a16e-09b93f047ea3-93" d="m172.90678,105.13846c-6.99001-4.12-10.42-11.18-7.64999-15.77,2.77-4.58,10.67999-4.95,17.67999-.83,2.82001,1.61,5.19,3.89,6.91,6.65l29.39999,17.86-9.12,14.04-28.02-19.1c-3.28-.19-6.44-1.17-9.21001-2.86h.00999l.00002.01Z" fill="#f6a6a9"/><polygon points="192.88676 121.32847 201.24676 101.35846 242.09678 114.87847 223.82676 145.28847 192.88676 121.32847" fill="#dddedf"/></svg>
+                            <h5 class="pollstar__caption">Heart For You</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="footer__content">
+                        <h4 class="footer__title">You Liked The Website ?</h4>
+                        <p class="footer__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi magnam repellat minima labore ratione quis velit maxime aspernatur debitis eaque voluptatem numquam est, cupiditate in, beatae illum dolorem obcaecati voluptatum facilis! Veniam iste ipsum nisi velit repudiandae, quos esse.</p>
+                    </div>
+                    <div class="footer__app">
+                        <img src="Images/Google-play.jpg" alt="Google Play" class="app__img">
+                        <img src="Images/App-store.jpg" alt="App Store" class="app__img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="footer__call">
+                        <div class="call__logo">
+                        </div>
+                        <div class="call__media">
+                            <div class="media media-facebook">
+                                <svg class="media__icon" width="40" height="40" viewBox="0 0 24 24"><path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg>
+                            </div>
+                            <div class="media media-whatsapp">
+                                <svg class="media__icon" width="40" height="40" enable-background="new 0 0 100 100" viewBox="0 0 100 100"><path d="M50,2.5C23.801,2.5,2.5,23.856,2.5,50.122c2.599,63.179,92.411,63.161,95,0C97.5,23.856,76.199,2.5,50,2.5z M81.413,24.47
+                                    c5.637,6.921,9.078,15.747,9.141,25.356c-1.33-0.296-14.736-3.006-28.247-1.312c-1.084-2.696-2.258-5.398-3.547-8.001
+                                    C73.75,34.375,80.548,25.634,81.413,24.47z M50,9.485c10.323,0,19.739,3.873,26.896,10.265c-0.718,1.037-6.819,9.27-21.259,14.689
+                                    C48.987,22.205,41.619,12.13,40.5,10.628C43.54,9.908,46.728,9.506,50,9.485z M32.752,13.358
+                                    c1.077,1.482,8.339,11.556,15.052,23.536c-18.979,5.037-35.699,4.974-37.514,4.953C12.908,29.232,21.416,18.734,32.752,13.358z
+                                     M9.424,50.207c0-0.423,0-0.847,0.021-1.249c1.773,0.021,21.449,0.275,41.694-5.799c1.161,2.265,2.28,4.593,3.293,6.9
+                                    c-0.549,0.148-1.077,0.317-1.605,0.487c-20.921,6.773-32.047,25.25-32.975,26.838C13.372,70.187,9.424,60.642,9.424,50.207z
+                                     M50.021,90.866c-9.373,0-18.029-3.217-24.911-8.593c0.718-1.482,8.951-17.398,31.836-25.399c0.063-0.021,0.169-0.042,0.253-0.085
+                                    c5.7,14.837,8.043,27.261,8.656,30.838C60.999,89.723,55.637,90.866,50.021,90.866z M72.694,83.903
+                                    c-0.443-2.476-2.597-14.371-7.895-28.997c12.709-2.032,23.877,1.291,25.27,1.736C88.253,67.965,81.772,77.722,72.694,83.903z"></path></svg>
+                            </div>
+                            <div class="media media-skaype">
+                                <svg class="media__icon" width="40" height="40" viewBox="0 0 24 24"><path d="M15.13916,11.8125a5.07559,5.07559,0,0,0-1.291-.59277c-.27978-.0846-.58953-.16736-.9104-.24713-.27911-.07782-.61132-.15766-1.02221-.248a9.31489,9.31489,0,0,1-1.436-.42383,1.49588,1.49588,0,0,1-.61572-.44726.84285.84285,0,0,1-.15918-.56543.96712.96712,0,0,1,.2041-.59668,1.59829,1.59829,0,0,1,.69971-.47559A4.01235,4.01235,0,0,1,12.03223,8a3.78727,3.78727,0,0,1,1.10547.14648,2.08274,2.08274,0,0,1,.66357.32129,1.23492,1.23492,0,0,1,.32519.34278.9997.9997,0,1,0,1.76075-.94727,3.14668,3.14668,0,0,0-.83741-.958A4.006,4.006,0,0,0,13.731,6.23633,5.76768,5.76768,0,0,0,12.03223,6a5.96329,5.96329,0,0,0-2.145.35059A3.55209,3.55209,0,0,0,8.30908,7.49121a2.97709,2.97709,0,0,0-.60449,1.79688,2.839,2.839,0,0,0,.58008,1.792,3.50074,3.50074,0,0,0,1.438,1.07226,10.5822,10.5822,0,0,0,1.30706.4079c.00837.00275.014.00946.02253.012.1914.05761.49755.13476.93994.23046.17236.037.33478.07789.49713.11847.01575.0047.03851.00965.05365.01435l.01807.00274c.24835.0633.48706.12873.70556.1955a3.02336,3.02336,0,0,1,.76367.34375,1.12652,1.12652,0,0,1,.36231.36816,1.20138,1.20138,0,0,1,.11865.585,1.15187,1.15187,0,0,1-.21387.73243,1.76331,1.76331,0,0,1-.80273.585A3.78736,3.78736,0,0,1,12.0083,16a3.68851,3.68851,0,0,1-1.70361-.34375,1.75626,1.75626,0,0,1-.61573-.54687,1.0164,1.0164,0,0,1-.20166-.50293,1,1,0,0,0-2,0,2.93957,2.93957,0,0,0,.55616,1.63867,3.7737,3.7737,0,0,0,1.34179,1.1875A5.621,5.621,0,0,0,12.0083,18a5.7083,5.7083,0,0,0,2.25391-.40527,3.71019,3.71019,0,0,0,1.665-1.27246,3.14637,3.14637,0,0,0,.58349-1.92676,3.08942,3.08942,0,0,0-.375-1.53028A3.16532,3.16532,0,0,0,15.13916,11.8125Zm7.22217,1.87891A10.49127,10.49127,0,0,0,10.30859,1.63867a6.499,6.499,0,0,0-8.66992,8.66992A10.49127,10.49127,0,0,0,13.69141,22.36133a6.499,6.499,0,0,0,8.66992-8.66992ZM16.5,21a4.5057,4.5057,0,0,1-2.16943-.55762,1.0038,1.0038,0,0,0-.67725-.10644A8.49212,8.49212,0,0,1,3.5,12a8.58284,8.58284,0,0,1,.16406-1.6543A1.00336,1.00336,0,0,0,3.55811,9.669,4.49939,4.49939,0,0,1,9.66943,3.55762a.99964.99964,0,0,0,.67725.10644A8.49212,8.49212,0,0,1,20.5,12a8.58284,8.58284,0,0,1-.16406,1.6543,1.00336,1.00336,0,0,0,.106.67675A4.49869,4.49869,0,0,1,16.5,21Z"></path></svg>
+                            </div>
+                            <div class="media media-be">
+                                <svg class="media__icon" width="40" height="40" viewBox="0 0 24 24"><path d="M20.07,6.35H15V7.76h5.09ZM19,16.05a2.23,2.23,0,0,1-1.3.37A2.23,2.23,0,0,1,16,15.88a2.49,2.49,0,0,1-.62-1.76H22a6.47,6.47,0,0,0-.17-2,5.08,5.08,0,0,0-.8-1.73,4.17,4.17,0,0,0-1.42-1.21,4.37,4.37,0,0,0-2-.45,4.88,4.88,0,0,0-1.9.37,4.51,4.51,0,0,0-1.47,1,4.4,4.4,0,0,0-.95,1.52,5.4,5.4,0,0,0-.33,1.91,5.52,5.52,0,0,0,.32,1.94A4.46,4.46,0,0,0,14.16,17a4,4,0,0,0,1.46,1,5.2,5.2,0,0,0,1.94.34,4.77,4.77,0,0,0,2.64-.7,4.21,4.21,0,0,0,1.63-2.35H19.62A1.54,1.54,0,0,1,19,16.05Zm-3.43-4.12a1.87,1.87,0,0,1,1-1.14,2.28,2.28,0,0,1,1-.2,1.73,1.73,0,0,1,1.36.49,2.91,2.91,0,0,1,.63,1.45H15.41A3,3,0,0,1,15.52,11.93Zm-5.29-.48a3.06,3.06,0,0,0,1.28-1,2.72,2.72,0,0,0,.43-1.58,3.28,3.28,0,0,0-.29-1.48,2.4,2.4,0,0,0-.82-1,3.24,3.24,0,0,0-1.27-.52,7.54,7.54,0,0,0-1.64-.16H2V18.29H8.1a6.55,6.55,0,0,0,1.65-.21,4.55,4.55,0,0,0,1.43-.65,3.13,3.13,0,0,0,1-1.14,3.41,3.41,0,0,0,.37-1.65,3.47,3.47,0,0,0-.57-2A3,3,0,0,0,10.23,11.45ZM4.77,7.86H7.36a4.17,4.17,0,0,1,.71.06,1.64,1.64,0,0,1,.61.22,1.05,1.05,0,0,1,.42.44,1.42,1.42,0,0,1,.16.72,1.36,1.36,0,0,1-.47,1.15,2,2,0,0,1-1.22.35H4.77ZM9.61,15.3a1.28,1.28,0,0,1-.45.5,2,2,0,0,1-.65.26,3.33,3.33,0,0,1-.78.08h-3V12.69h3a2.4,2.4,0,0,1,1.45.41,1.65,1.65,0,0,1,.54,1.39A1.77,1.77,0,0,1,9.61,15.3Z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="copy-right flex-center">
+                        <h6 class="copy-right__text">© 2023 Amirali Shoja. All rights reserved.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper',{
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            spaceBetween: 25,
+        })
+    </script>
+</body>
+</html>
